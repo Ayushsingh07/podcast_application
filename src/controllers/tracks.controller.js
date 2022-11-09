@@ -1,5 +1,5 @@
 const { ObjectID, GridFSBucket } = require("mongodb");
-const { getConnection } = require("../database");
+const { getConnection } = require("../../database");
 const { Readable } = require('stream');
 const multer = require('multer');
 
