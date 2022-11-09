@@ -16,5 +16,6 @@ app.use(cors());
 // routes
 app.use('/tracks', trackRoutes);
 
-app.listen(PORT);
-console.log('Server on port', PORT);
+app.listen(PORT,()=>{
+    console.log("running good gg ON")
+})  
