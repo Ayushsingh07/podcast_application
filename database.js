@@ -2,6 +2,8 @@ const { MongoClient } = require('mongodb');
 
 let db;
 
+
+
 MongoClient.connect('mongodb+srv://ayush:12345@cluster0.x0duiki.mongodb.net/?retryWrites=true&w=majority', {useUnifiedTopology: true}, (err, client) => {
   if (err) {
     console.log(err);
