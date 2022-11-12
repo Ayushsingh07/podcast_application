@@ -1,6 +1,6 @@
 const mongoose =require("mongoose")
 
-const userSchema= new mongoose.Schema({
+const PodSchema= new mongoose.Schema({
     podcast_name:{
         type:String,
         required:true,
@@ -10,7 +10,8 @@ const userSchema= new mongoose.Schema({
         type:String,
         unique:true
     },
-    file:{
+    podfile:{
+        data:Buffer,
         type:String,
         default:""
     }
